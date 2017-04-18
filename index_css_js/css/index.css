@@ -103,4 +103,22 @@
 	background: #fff;
 }
 /*content css*/
-
+.works{
+	margin-top: 30px;
+}
+.title_txt{
+	color: #49cbcd;
+	font-size: 20px;
+	line-height: 30px;
+	border-bottom: 2px dotted #49cbcd;
+}
+.works a{
+	display: inline-block;
+	margin: 20px 0;
+}
+.works>a:nth-child(2){
+	margin: 0 50px;
+}
+.works a img{
+	vertical-align: middle;
+}

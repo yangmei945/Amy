@@ -1,0 +1,51 @@
+.logo{
+    width: 168px;
+    padding: 0 0 0 18px;
+    margin-top: -15px;
+}
+.navbar-nav a{
+    font-weight: 600;
+    color: #a2a2a2!important;
+}
+.navbar-nav a:hover, .navbar-nav a:active{
+    color: #693248!important;
+}
+.middle-nav-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.more{
+    font-size: 25px;
+    line-height: 7px!important;
+}
+.cart_icon img{
+    width: 18px;
+}
+.share-link{
+    text-align: center!important;
+}
+.share-link a{
+    display: inline-block!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.share-link a:hover, .share-link a:active{
+    background: transparent!important;
+}
+
+/**/
+.nav-middle{
+    position: relative;
+    left: 50%;
+}
+.nav-middle li{
+    position: relative;
+    left: -50%;
+}
+.homepage-logo{
+    width: 150px;
+    margin-top: -8px;
+    padding-top: 0;
+}

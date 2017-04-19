@@ -3,60 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title></title>
         <!--Bootstrap css-->
-        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <!--css-->
-        <link rel="stylesheet" href="common/css/index.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <!--[if lt IE 9]>
         <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand logo" href="https://www.baronfig.com"><img src="//cdn.shopify.com/s/files/1/0543/1257/t/30/assets/logo.svg?872034477890302843"></a>
-                </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand homepage-logo" href="https://www.baronfig.com">
+                    <img src="img/logo.svg" />
+                </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".broad-nav">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse broad-nav">
+                <ul class="nav navbar-nav nav-middle">
+                    <li><a href="#">NOTEBOOKS</a></li>
+                    <li><a href="#">PENS</a></li>
+                    <li><a href="#">PENCILS</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">SUBSCRIPTIONS</a></li>
+                    <li><a href="#">CODEX</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">...</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">CUSTOM</a></li>
+                            <li><a href="#">OUR STORY</a></li>
+                            <li><a href="#">PROJECTS</a></li>
+                            <li><a href="#">PLANT A TREE</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">LOG IN</a></li>
+                            <li><a href="#">HELP</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="share-link">
+                                <a href="http://facebook.com/baronfig" target="_blank"><i class="icon-facebook"></i></a>
+                                <a href="http://twitter.com/baronfig" target="_blank"><i class="icon-twitter"></i></a>
+                                <a href="http://instagram.com/baronfig" target="_blank"><i class="icon-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="cart_icon" href="#"><img src="img/index/navbar_cart-icon_empty_01.png" /></a></li>
+                </ul>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav flexbox-container middle-nav-container">
-                        <li><a href="#">NOTEBOOKS</a></li>
-                        <li><a href="#">PENS</a></li>
-                        <li><a href="#">PENCILS</a></li>
-                        <li><a href="#">ACCESSORIES</a></li>
-                        <li><a href="#">SUBSCRIPTIONS</a></li>
-                        <li><a href="#">CODEX</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">...</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+
         </nav>
 
-        <script src="common/js/jquery-3.2.1.js"></script>
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-        <script src="common/js/index.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

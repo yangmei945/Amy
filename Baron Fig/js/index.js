@@ -1,1 +1,8 @@
-/*Created by Amy on 2017/4/18 0018.*/
+$(function(){
+    $(".narrow-menu").click(function(){
+        $(".narrow-menu-list").show();
+    });
+    $(".narrow-menu-list>.close").click(function(){
+        $(".narrow-menu-list").hide();
+    });
+});

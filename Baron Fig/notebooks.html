@@ -1,10 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title></title>
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!--css-->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/notebook.css" />
+        <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/notebooks.js"></script>
+    </head>
+    <body>
+        <!--导航 begin-->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <span class="sr-only">Toggle Navigation</span>
+                <button class="navbar-toggle narrow-nav narrow-menu" data-toggle="collapse">
+                    MENU
+                </button>
+                <a class="navbar-brand homepage-logo nav-logo" href="https://www.baronfig.com" data-toggle="collapse">
+                    <img src="img/logo.svg" />
+                </a>
+                <button class="navbar-toggle narrow-nav">
+                    CART
+                </button>
+            </div>
+            <div class="collapse navbar-collapse broad-navbar">
+                <div class="navbar-header">
+                    <a class="navbar-brand homepage-logo" href="https://www.baronfig.com">
+                        <img src="img/logo.svg" />
+                    </a>
+                </div>
+                <ul class="nav navbar-nav nav-middle">
+                    <li><a href="notebooks.html">NOTEBOOKS</a></li>
+                    <li><a href="pens.html">PENS</a></li>
+                    <li><a href="pencils.html">PENCILS</a></li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                    <li><a href="subscriptions.html">SUBSCRIPTIONS</a></li>
+                    <li><a href="codex.html">CODEX</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle more" data-toggle="dropdown" href="javascript:;">...</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.baronfig.com/pages/custom-bulk">CUSTOM</a></li>
+                            <li><a href="https://www.baronfig.com/pages/our-story">OUR STORY</a></li>
+                            <li><a href="https://www.baronfig.com/pages/projects">PROJECTS</a></li>
+                            <li><a href="https://www.baronfig.com/pages/buy-a-book-plant-a-tree">PLANT A TREE</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://www.baronfig.com/account/login">LOG IN</a></li>
+                            <li><a href="https://www.baronfig.com/pages/faqs">HELP</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="share-link text-center">
+                                <a href="http://facebook.com/baronfig" target="_blank"><i class="icon-facebook"></i></a>
+                                <a href="http://twitter.com/baronfig" target="_blank"><i class="icon-twitter"></i></a>
+                                <a href="http://instagram.com/baronfig" target="_blank"><i class="icon-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="cart_icon" href="https://www.baronfig.com/cart"></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse jumbotron narrow-menu-list">
+                <button class="close">&times;</button>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="notebooks.html">NOTEBOOKS</a></li>
+                    <li class="list-group-item"><a href="pens.html">PENS</a></li>
+                    <li class="list-group-item"><a href="pencils.html">PENCILS</a></li>
+                    <li class="list-group-item"><a href="accessories.html">ACCESSORIES</a></li>
+                    <li class="list-group-item"><a href="codex.html">CODEX</a></li>
+                    <li class="list-group-item"><a href="https://www.baronfig.com/pages/our-story">OUR STORY</a></li>
+                    <li class="list-group-item"><a href="https://www.baronfig.com/pages/faqs">HELP</a></li>
+                    <li class="list-group-item"><a href="http://www.baronfig.com/account/login">LOG IN</a></li>
+                </ul>
+            </div>
+            <!--内部导航 begin-->
+            <div class="navbar-fixed-top navbar-inner hidden-xs">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Classic Editions</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Related</a></li>
+                        <li class="nav-d"></li>
+                        <li><a href="#">Custom for Bussiness&nbsp;&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--内部导航 end-->
+        </nav>
+        <!--导航 end-->
 
-</body>
+        <!-- banner begin  -->
+        <!-- PC端轮播图 -->
+        <div id="carousel-banner-generic" class="carousel slide banner-slide hidden-xs notebooks-banner" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="min-height: 300px;">
+                <a class="item active" href="https://www.baronfig.com/pages/archer">
+                    <img src="img/index/bf_homepage_archer_01.jpg" alt="">
+                </a>
+                <a class="item" href="https://www.baronfig.com/products/askew">
+                    <img src="img/index/bf_homepage_askew_01.jpg" alt="">
+                </a>
+                <a class="item" href="https://www.baronfig.com/pages/confidant">
+                    <img src="img/index/bf_homepage_confidant-sizes-HOME_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/bf_homepage_workplay2_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/charcoal-is-back-homepage.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-desktop_black-box_03.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/infinity_homepage_desktop_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/metamorphosis_home-banner_desktop_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/pen-sheath_banner-desktop_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/rabbit-hole_desktop_banner.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/slide_2.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/slide_5.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/snakes-and-ladders_home-banner_desktop_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/starter-kit_homepage-banner_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/subscription_homepage_desktop_02.jpg" alt="">
+                </a>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-banner-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-banner-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- 移动端轮播图 -->
+        <div id="carousel-banner-mobile" class="carousel slide visible-xs notebooks-banner" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <a class="item active" href="">
+                    <img src="img/index/home_slideshow-mobile_archer_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/askew_homepage_banner_mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-mobile_confidant-sizes_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-mobile_workplay2_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/charcoal-is-back_homepage_mobile.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-mobile_black-box_03.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/infinity_homepage_banner_mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/metamorphosis_home-banner_mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/pen-sheath_banner-mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/rabbit-hole_mobile_banner.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-mobile_squire_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/home_slideshow-mobile_custom_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/snakes-and-ladders_home-banner_mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/starter-kit_homepage-banner_mobile_01.jpg" alt="">
+                </a>
+                <a class="item" href="">
+                    <img src="img/index/subscription_homepage_mobile_02.jpg" alt="">
+                </a>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-banner-mobile" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-banner-mobile" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- banner end-->
+        <!--content begin-->
+        <!-- CLASSIC EDITIONS begin-->
+        <div id="classic-editions" class="container text-center content-title">CLASSIC EDITIONS</div>
+        <div class="container-fluid sale-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-classic1-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-classic1-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-classic1-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/new-confidant_light-gray_all-sizes_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>CONFIDANT</h3>
+                                    <p>HARDCOVER CLASSIC</p>
+                                    <p>$ 18.00</p>
+                                </div>
+                            </a>
+                            <a class="item" href="#">
+                                <img src="img/notebooks/new-confidant_charcoal_all-sizes_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>CONFIDANT</h3>
+                                    <p>HARDCOVER CLASSIC</p>
+                                    <p>$ 18.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-classic2-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-classic2-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-classic2-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/vanguard_classic_light-gray_all-sizes_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>VANGUARD</h3>
+                                    <p>SOFTCOVER CLASSIC</p>
+                                    <p>$ 15.00</p>
+                                </div>
+                            </a>
+                            <a class="item" href="#">
+                                <img src="img/notebooks/vanguard_classic_charcoal_all-sizes_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>VANGUARD</h3>
+                                    <p>SOFTCOVER CLASSIC</p>
+                                    <p>$ 15.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-classic3-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-classic3-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-classic3-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/starter-kit_standard_light-gray-confidant_pen.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>STARTER KIT</h3>
+                                    <p>HARDCOVER + PEN/PENCIL</p>
+                                    <p>$ 64.00</p>
+                                </div>
+                            </a>
+                            <a class="item" href="#">
+                                <img src="img/notebooks/starter-kit_standard_charcoal-confidant_pen.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>STARTER KIT</h3>
+                                    <p>HARDCOVER + PEN/PENCIL</p>
+                                    <p>$ 64.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-classic4-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-classic4-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-classic4-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/starter-kit_deluxe_light-gray-confidant_pen.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>DELUXE STARTER KIT</h3>
+                                    <p>HARDCOVER + CASE + PEN/PENCIL</p>
+                                    <p>$ 129.00</p>
+                                </div>
+                            </a>
+                            <a class="item" href="#">
+                                <img src="img/notebooks/starter-kit_deluxe_charcoal-confidant_pen.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>DELUXE STARTER KIT</h3>
+                                    <p>HARDCOVER + CASE + PEN/PENCIL</p>
+                                    <p>$ 129.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLASSIC EDITIONS end-->
+        <!-- LIMITED EDITIONS begin-->
+        <div id="limited-editions" class="container text-center content-title">LIMITED EDITIONS</div>
+        <div class="container-fluid sale-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-limited1-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-limited1-generic" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/metamorphosis_book_world_01.jpg" onmouseover="this.src='img/notebooks/metamorphosis_box_world_01.jpg'" onmouseout="this.src='img/notebooks/metamorphosis_book_world_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>METAMORPHOSIS</h3>
+                                    <p>HARDCOVER LIMITED EDITION</p>
+                                    <p>$ 20.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-limited2-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-limited2-generic" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/vanguard_limited-edition_infinity_books_01.jpg" onmouseover="this.src='img/notebooks/vanguard_limited-edition_infinity_books_02.jpg'" onmouseout="this.src='img/notebooks/vanguard_limited-edition_infinity_books_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>INFINITY</h3>
+                                    <p>SOFTCOVER LIMITED EDITION</p>
+                                    <p>$ 14.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-limited3-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-limited3-generic" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/confidant_limited-edition_askew_book_01.jpg" onmouseover="this.src='img/notebooks/confidant_limited-edition_askew_box_01.jpg'" onmouseout="this.src='img/notebooks/confidant_limited-edition_askew_book_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>ASKEW</h3>
+                                    <p>HARDCOVER LIMITED EDITION</p>
+                                    <p>$ 20.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-limited4-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-limited4-generic" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/vanguard_limited-edition_black-box_books_01.jpg" onmouseover="this.src='img/notebooks/vanguard_limited-edition_black-box_box_01.jpg'" onmouseout="this.src='img/notebooks/vanguard_limited-edition_black-box_books_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>BLACK BOX</h3>
+                                    <p>SOFTCOVER LIMITED EDITION</p>
+                                    <p>$ 15.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-limited5-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-limited5-generic" data-slide-to="0" class="active"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/confidant_limited-edition_work-play_book_01.jpg" onmouseover="this.src='img/notebooks/confidant_limited-edition_work-play_box_01.jpg'" onmouseout="this.src='img/notebooks/confidant_limited-edition_work-play_book_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>WORK/PLAY II</h3>
+                                    <p>HARDCOVER LIMITED EDITION</p>
+                                    <p>$ 20.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 has-right-border">
+                    <div id="carousel-limited6-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/subscription_icon_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>SUBSCRIPTIONS</h3>
+                                    <p>QUARTERLY LIMITED EDITION</p>
+                                    <p>$ 64.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LIMITED EDITIONS end-->
+        <!-- LIMITED EDITIONS begin-->
+        <div id="accessories" class="container text-center content-title">ACCESSORIES</div>
+        <div class="container-fluid sale-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-accessories1-generic" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-accessories1-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-accessories1-generic" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/guardian_yellowgold_open_01.jpg" onmouseover="this.src='img/notebooks/guardian_yellowgold_closed_01.jpg'" onmouseout="this.src='img/notebooks/guardian_yellowgold_open_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>GUARDIAN</h3>
+                                    <p>LEATHER CONFIDANT CASE</p>
+                                    <p>$ 85.00</p>
+                                </div>
+                            </a>
+                            <a class="item" href="#">
+                                <img src="img/notebooks/guardian_charcoal_open_01.jpg" onmouseover="this.src='img/notebooks/guardian_charcoal_closed_01.jpg'" onmouseout="this.src='img/notebooks/guardian_charcoal_open_01.jpg'" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>GUARDIAN</h3>
+                                    <p>LEATHER CONFIDANT CASE</p>
+                                    <p>$ 85.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-accessories2-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/mastermind_worlds_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>MASTERMIND</h3>
+                                    <p>DESK PAD</p>
+                                    <p>$ 15.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 has-right-border">
+                    <div id="carousel-accessories3-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/nomad_worlds_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>NOMAD</h3>
+                                    <p>STICKY NOTES</p>
+                                    <p>$ 8.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ACCESSORIES end-->
+        <!-- RELATED begin-->
+        <div id="related" class="container text-center content-title">RELATED</div>
+        <div class="container-fluid sale-product">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-related1-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/worlds_icons_pen.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>SHOP PENS</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-related2-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/worlds_icons_pencil.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>SHOP PENCILS</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-related3-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/worlds_icons_accessories.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>SHOP ACCESSORIES</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <div id="carousel-related4-generic" class="carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <a class="item active" href="#">
+                                <img src="img/notebooks/codex_related_01.jpg" alt="">
+                                <div class="text-center sale-detail">
+                                    <h3>CODEX APP</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLASSIC EDITIONS end-->
+        <!--content end-->
+        <!--footer begin-->
+        <div class="footer">
+            <div class="container">
+                <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12 footer-container">
+                    <p class="footer-first-row">
+                                <span id="footer-hero" class="hidden-sm hidden-xs">
+                                    <a href="#">BARON FIG</a>&nbsp;
+                                </span>
+                        <a href="#">SHOP</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#">PRESS</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#">ABOUT</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#">HELP</a>
+                    </p>
+                    <p class="footer-second-row">
+                        <a href="#">Customize</a>&nbsp;&nbsp;
+                        <a href="#">Wholesale</a>&nbsp;&nbsp;
+                        <a href="#">Feedback</a>&nbsp;&nbsp;
+                        <span class="visible-sm visible-xs"><br></span>
+                        <a href="#">Returns</a>&nbsp;&nbsp;
+                        <a href="#">Our Story</a>&nbsp;&nbsp;
+                        <a href="#">Blog</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 footer-container">
+                    <p class="footer-title-txt">
+                        STAY UPDATED
+                    </p>
+                    <form class="form-horizontal update-form" action="" method="">
+                        <input type="text" value="Enter email for updates" />
+                        <button type="submit" class="btn btn-warning btn-sm">SUBMIT</button>
+                    </form>
+                    <p class="share-link text-center pull-left footer-link">
+                        <a href="http://facebook.com/baronfig" target="_blank"><i class="icon-facebook"></i></a>
+                        <a href="http://twitter.com/baronfig" target="_blank"><i class="icon-twitter"></i></a>
+                        <a href="http://instagram.com/baronfig" target="_blank"><i class="icon-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-center footer-title-txt copy">&copy;&nbsp;2017&nbsp;BARON FIG</p>
+                <p class="footer-first-row pull-right hidden-xs hidden-md footer-nav">
+                    <a href="#">CONTACT US</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">TERMS & POLICY</a>&nbsp;&nbsp;&nbsp;
+                    <a href="#">DESIGNED IN NYC</a>
+                </p>
+            </div>
+        </div>
+        <!--footer end-->
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
 </html>

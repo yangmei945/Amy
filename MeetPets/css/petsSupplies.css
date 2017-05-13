@@ -1,0 +1,58 @@
+/*宠物用品*/
+.content .row>div{
+	padding: 20px 0;
+	position: relative;
+}
+.price{
+	color: #efa70c;
+}
+.price span{
+	font-size: 2em;
+}
+.content button{
+	width: 80%;
+}
+.content img{
+	width: 80%!important;
+}
+
+/*宠物护理*/
+.pets-nurse-list li{
+	padding: 3px 15px;
+	line-height: 35px;
+	margin: 0 10px;
+}
+
+/*宠物美容*/
+.cover-layer{
+	position: absolute;
+	bottom: 20px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	line-height: 30px;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.beautify{
+	padding: 20px 0;
+}
+.beautify-image{
+	margin-top: 30px;
+}
+.beautify-example{
+	list-style: none;
+	position: absolute;
+	left: 0;
+	width: 2440px;
+}
+.beautify-example li{
+	float: left;
+}
+.show-wrap{
+	width: 90%;
+	height: 197px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}

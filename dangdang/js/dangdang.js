@@ -254,8 +254,130 @@ $(function(){
 	});
 	/*图书榜单*/
 	$(".book_name").mouseover(function(){
-		$(this).parent().siblings().children(".book_detail").hide().siblings(".book_name").show().addClass("book_name_css");
+		$(this).parent().siblings().children(".book_detail").hide();
+		$(this).parent().siblings().children(".book_name").css("display", "inline-block");
 		$(this).hide().siblings(".book_detail").show();
 	});
+	/*图书轮播*/
+	$(".book_lunbo li:not(:first-child)").hide();
+	var bookIndex	= 0;
+	var bookTimer	= null;
+	function bookPlay(){
+		bookTimer	= setInterval(function(){
+			if(bookIndex==$(".book_lunbo li").length-1){
+				bookIndex	= -1;
+			}
+			bookIndex++;
+			showBook();
+		}, 2000);
+	}
+	function showBook(){
+		$(".book_lunbo li").eq(bookIndex).fadeIn(1000).siblings().fadeOut(1000);
+		$(".book_lunbo_icon a").eq(bookIndex).addClass("book_icon_hover").siblings().removeClass("book_icon_hover");
+	}
+	bookPlay();
+	$(".bl").hover(
+		function(){
+			clearInterval(bookTimer);
+			$(".bl .left_button, .bl .right_button").show();
+		},
+		function(){
+			bookPlay();
+			$(".bl .left_button, .bl .right_button").hide();
+		}
+	);
+	$(".book_lunbo_icon a").click(function(){
+		bookIndex	= $(this).index();
+		showBook();
+	});
+	$(".bl .left_page").click(function(){
+		if(bookIndex==0){
+			bookIndex	= $(".book_lunbo li").length;
+		}
+		bookIndex--;
+		showBook();
+	});
+	$(".bl .right_page").click(function(){
+		if(bookIndex==$(".book_lunbo li").length-1){
+			bookIndex	= -1;
+		}
+		bookIndex++;
+		showBook();
+	});
+	$(".book_tab>.book_tab_header>.tabs>li").mouseover(function(){
+		$(".book_tabs_content>li").eq($(this).index()).show().siblings().hide();
+	});
+	$(".book_list_title>a").mouseover(function(){
+		$(this).addClass("list_title_hover").siblings().removeClass("list_title_hover");
+		$(".book_list_content>ul").eq($(this).index()).show().siblings().hide();
+	});
+	/*服装*/
+	tab("#cloth");
+	/*运动户外*/
+	tab("#sport");
+	function tab(id){
+		$(id+" .tabs>li").mouseover(function(){
+			$(id+" .tabs>li>a").removeClass("tabs_hover");
+			$(this).children("a").addClass("tabs_hover");
+			$(id+" .cloth_content>li").eq($(this).index()).show().siblings().hide();
+		});
+		var clothTimer	= null;
+		var ci	= 0;
+		function clothPlay(){
+			clothTimer	= setInterval(function(){
+				if(ci==$(id+" .cloth_lunbo li").length-1){
+					ci	= -1;
+				}
+				ci++;
+				showCloth();
+			}, 2000);
+		}
+		function showCloth(){
+			$(id+" .cloth_lunbo li").eq(bookIndex).fadeIn(1000).siblings().fadeOut(1000);
+			$(id+" .book_lunbo_icon a").eq(bookIndex).addClass("book_icon_hover").siblings().removeClass("book_icon_hover");
+		}
+		clothPlay();
+		$(id+" .bl").hover(
+			function(){
+				clearInterval(clothTimer);
+				$(".bl .left_button, .bl .right_button").show();
+			},
+			function(){
+				clothPlay();
+				$(".bl .left_button, .bl .right_button").hide();
+			}
+		);
+		$(id+" .book_lunbo_icon a").click(function(){
+			ci	= $(this).index();
+			showCloth();
+		});
+		$(id+" .bl .left_page").click(function(){
+			if(ci==0){
+				ci	= $(id+" .book_lunbo li").length;
+			}
+			ci--;
+			showCloth();
+		});
+		$(id+" .bl .right_page").click(function(){
+			if(ci==$(id+" .book_lunbo li").length-1){
+				ci	= -1;
+			}
+			ci++;
+			showCloth();
+		});
+	}
+	/*秒杀计时器*/
+	setInterval(function(){
+		var now	= new Date();
+		$(".miaosha_time>.hours").text(fixTime(now.getHours()));
+		$(".miaosha_time>.minutes").text(fixTime(now.getMinutes()));
+		$(".miaosha_time>.seconds").text(fixTime(now.getSeconds()));
+	}, 1000);
+	function fixTime(time){
+		if(time<10){
+			return "0"+time;
+		}
+		else return time;
+	}
 });
 

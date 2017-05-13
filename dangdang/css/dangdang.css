@@ -1182,10 +1182,16 @@ h3{
 	margin: 10px 10px 0 0;
 	width: 909px;
 	height: 442px;
+	position: relative;
+}
+.book_tabs_content>li{
+	position: absolute;
+}
+.book_tabs_content>li:not(:first-child){
+	display: none;
 }
 .book_classify{
 	width: 238px;
-	border-right: 1px solid #e6e6e6;
 	float: left;
 }
 .book_classify>a:first-child{
@@ -1218,6 +1224,7 @@ h3{
 	width: 333px;
 	height: 220px;
 	overflow: hidden;
+	border-left: 1px solid #e6e6e6;
 }
 .book_lunbo{
 	position: relative;
@@ -1258,7 +1265,10 @@ h3{
 	border-top: none;
 }
 .book li:nth-child(3){
-	border-left: none;
+	border-left: 1px solid #e6e6e6;
+}
+.book li:nth-child(2), .book li:last-child{
+	border-right: 1px solid #e6e6e6;
 }
 .book li img{
 	display: block;
@@ -1272,6 +1282,11 @@ h3{
 	color: #646464;
 	display: block;
 	padding: 5px 10px;
+	width: 12em;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .book_price{
 	font-size: 12px;
@@ -1316,8 +1331,15 @@ h3{
 .book_list_title a.list_title_hover{
 	text-decoration: none;
 }
-.book_list_content li{
+.book_list_content li, .book_list_content{
 	position: relative;
+}
+.book_list_content>ul{
+	position: absolute;
+	top: 48px;
+}
+.book_list_content>ul:last-child{
+	display: none;
 }
 .book_list_content>ul>li>div{
 	display: inline-block;
@@ -1343,12 +1365,15 @@ h3{
 	color: #646464;
 	line-height: 32px;
 }
+.book_list_content>ul>li{
+	display: block;
+}
 .book_list_content>ul>li>div.book_detail{
 	text-decoration: none;
 	margin-left: 22px;
 	display: inline-block;
 	width: 257px;
-	height: 133px;
+	height: 132px;
 	display: none;
 }
 .book_name a, .book_detail a{
@@ -1361,12 +1386,12 @@ h3{
 .book_detail img{
 	float: left;
 	width:85px;
-	margin: 25px 5px 15px 10px;
+	margin: 15px 5px 15px 10px;
 }
 .book_detail dl{
 	font-size: 10px;
 	color: #969696;
-	margin: 25px 10px 0 0;
+	margin: 20px 10px 0 0;
 	line-height: 18px;
 }
 .book_detail dl dt{
@@ -1376,9 +1401,11 @@ h3{
 	display: inline-block;
 }
 .book_list_content>ul>li:first-child>div.book_name{
+	display: inline-block;
+	width: 255px;
 	display: none;
 }
-.book_list_content ul li:last-child{
+.book_list_content>ul>li:last-child{
 	border-bottom: none;
 }
 /*创意文具css*/
@@ -1437,9 +1464,6 @@ h3{
 .cloth_list_2 li{
 	border-bottom: none;
 }
-.cloth_list_2 li:first-child{
-	border-left: none;
-}
 .cloth_list_1 li{
 	height: 340px;
 }
@@ -1471,6 +1495,9 @@ h3{
 .brand_lunbo .right_button{
 	top: 4px;
 	left: 1170px!important;
+}
+.cloth_content>li:not(:nth-child(1)){
+	display: none;
 }
 /*孕婴童css*/
 .child{

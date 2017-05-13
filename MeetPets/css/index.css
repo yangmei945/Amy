@@ -1,0 +1,84 @@
+.navbar-inverse{
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.content{
+    box-shadow: 0 0 5px #ccc;
+    margin: 20px auto;
+}
+.content a, .content3 img{
+    margin: 10px 0;
+    position: relative;
+}
+.content a img{
+    width: 100%;
+}
+.content a>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.content a:hover>div, .content a:active>div{
+    display: block;
+}
+.content a>div>span{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.focus-list{
+    margin-top: 10px;
+}
+.focus-list>li{
+    border: none;
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+}
+.focus-list>li:first-child{
+    border-top: none;
+}
+.focus-list a{
+    color: #000;
+}
+.focus-list a:hover, .focus-list a:active{
+    color: #1b6d85;
+}
+.focus-list h5{
+    display: inline-block;
+}
+.footer{
+    padding: 20px 0 10px;
+    background: #000;
+}
+.footer p, .footer a{
+    color: #999;
+}
+.footer a:hover, .footer a:active{
+    text-decoration: none;
+    color: #fff;
+}
+.footer .row>div{
+    text-align: center;
+}
+@media(min-width: 768px){
+    .footer .row>div:first-child{
+        text-align: left;
+    }
+    .footer .row>div:last-child{
+        text-align: right;
+    }
+}
+.content a:hover, .content a:active{
+	text-decoration: none;
+}
+.content a p{
+	color: #333;
+	margin-top: 20px;
+}

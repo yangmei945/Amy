@@ -1,0 +1,85 @@
+.content a p{
+    color: #000;
+    margin-top: 20px;
+}
+.content a:hover, .content a:active{
+    text-decoration: none!important;
+}
+.row>a{
+	position: relative;
+}
+.lookup-icon{
+	width: 64px;
+	height: 64px;
+	background: url(../images/petsBreed/imageEffetc_magnifier.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%); 
+	display: none;
+}
+.row>a:hover .lookup-icon, .row>a:active .lookup-icon{
+	display: block;
+}
+.pop-show{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 500;
+}
+.show-image{
+	list-style: none;
+	font-size: 0;
+}
+.show-image li{
+	float: left;
+	margin: 0 5px;
+	display: inline-block;
+	display: table-cell;
+	vertical-align: bottom;
+}
+.now img{
+	width: 350px;
+}
+.pop-show{
+	display: none;
+}
+.pop-show .container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.pop-show-close{
+	font-size: 50px;
+	margin-right: 40px;
+	color: #fff;
+}
+.pop-show-close:hover, .pop-show-close:active{
+	text-decoration: none;
+}
+.show-detail{
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	bottom: 0;
+}
+.show-detail>li{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.show-detail>li:not(:first-child){
+	display: none;
+}
+.show-detail>li h5{
+	display: inline-block;
+	margin-right: 20px;
+}
+.show-detail>li p{
+	font-size: 1em;
+}

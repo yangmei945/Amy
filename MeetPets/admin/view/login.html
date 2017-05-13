@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>遇见宠屋管理登录</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="wrap-login text-center">
+            <h3>遇见宠屋后台管理系统</h3>
+            <form action="../login.php" method="post" onsubmit="return checkForm()">
+                <ul>
+                    <li><span class="glyphicon glyphicon-user logicon"></span><input type="text" id="username" name="username" /></li>
+                    <li><span class="glyphicon glyphicon-lock logicon"></span><input type="password" id="password" name="password" /></li>
+                    <li>
+                        <button type="reset" class="btn btn-default btn-primary btn1">重置</button>
+                        <button type="submit" class="btn btn-default btn-primary">登录</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script type="text/javascript" src="../bootstrap/js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("body").height($(window).height());
+            });
+            function checkForm(){
+                var username    = document.getElementById("username").value;
+                var password    = document.getElementById("password").value;
+                if(!username){
+                    alert("请输入用户名！");
+                    return false;
+                }
+                else{
+                    if(!password){
+                        alert("请输入密码！");
+                        return false;
+                    }
+                    else{
+                        return true;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
+

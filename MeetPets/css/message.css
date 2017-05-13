@@ -1,0 +1,25 @@
+.container ul{
+	list-style: none;
+}
+.container input[type="text"]{
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+}
+.container textarea{
+	width: 400px;
+	height: 100px;
+	color: #666;
+	font-weight: normal;
+}
+.message .identify{
+	width: 100px!important;
+}
+.identify-code{
+	display: inline-block;
+	margin-left: 20px;
+}
+button{
+	width: 260px;
+	margin-top: 20px;
+}

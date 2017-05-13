@@ -2,90 +2,166 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Amy Yang</title>
-		<link rel="icon" href="index_css_js/images/common/amy.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="index_css_js/images/common/amy.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="index_css_js/css/index.css" />
-		<script type="text/javascript" src="index_css_js/js/jquery-2.1.0.js"></script>
-		<script type="text/javascript" src="index_css_js/js/index.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Amy</title>
+		<link rel="icon" href="images/amy.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/amy.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/amy.css" /> 
+		<!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 	</head>
 	<body>
-		<!--BGM begin-->
-		<audio autoplay="autoplay" loop="loop">
-  			<source src="index_css_js/audio/Turn_Loose_The_Mermaids.mp3" type="audio/mp3" />
-  		</audio>
-  		<!--BGM end-->
-  		
-  		<!--top begin-->
-  		<div class="top">
-  			<div class="type_area">
-				<a href="#">
-					<img src="index_css_js/images/common/AmyLogo.png" />
-				</a>
-				<ul class="nav">
-					<li class="li_css">
-						<a href="#" target="_blank">Home</a>
-						<a href="#" target="_blank">首页</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">Works</a>
-						<a href="#" target="_blank">作品</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">Blog</a>
-						<a href="#" target="_blank">博客</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">hobby</a>
-						<a href="#" target="_blank">爱好</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">Contact</a>
-						<a href="#" target="_blank">联系我</a>
-					</li>
-				</ul>
-			</div>
-  		</div>
-		<!--top end-->
+		<!--导航栏 begin-->
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Amy</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="active"><a href="#work">作品</a></li>
+		        <li><a href="#blog">博客</a></li>
+		        <li><a href="#hobby">爱好</a></li>
+		        <li><a href="#contact">联系我</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<!--导航栏 end-->
 		<!--banner begin-->
-		<div class="banner">
-			<ul class="slide_image">
-				<li>
-					<a href="#" target="_blank">
-						<img src="index_css_js/images/banner/banner_1.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<img src="index_css_js/images/banner/banner_2.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="#" target="_blank">
-						<img src="index_css_js/images/banner/banner_3.jpg" alt="" />
-					</a>
-				</li>
-			</ul>
-			<div class="slide type_area">
-				<a class="pre_slide" href="javascript:;">&lt;</a>
-				<a class="next_slide" href="javascript:;">&gt;</a>
-			</div>
-			<div class="slide_icon">
-				<span class="slide_css"></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
+		<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-generic" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="images/banner1.jpg" alt="大海">
+		    </div>
+		    <div class="item">
+		      <img src="images/banner2.jpg" alt="草原">
+		    </div>
+		    <div class="item">
+		      <img src="images/banner3.jpg" alt="城市">
+		    </div>
+		  </div>
+		  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div><a id="work"></a>
 		<!--banner end-->
-		<!--content begin-->
-		<div class="type_area">
-			<div class="works">
-				<h3 class="title_txt">我的作品</h3>
-				<a href="dangdang/index.html" target="_blank"><img src="index_css_js/images/works/DDlogoNEW.png" alt="当当" /></a>
-				<a href="QQ/index.html" target="_blank"><img src="index_css_js/images/works/76cc23699622990b8bd7ae47258a201f.png" alt="QQ" /></a>
-				<a href="Baron Fig/index.html" target="_blank">Baron Fig</a>
+		<!--作品 begin-->
+		<div class="container content work text-center">
+			<h2>个人作品集</h2>
+			<div class="row">
+				<a class="col-lg-4 col-xs-12" href="dangdang/index.html" target="_blank">
+					<span class="animated wobble"></span>
+					<p>仿制当当商城首页</p>
+				</a>
+				<a class="col-lg-4 col-xs-12" href="QQ/index.html" target="_blank">
+					<span class="animated bounce"></span>
+					<p>网页版QQ客户端模拟器</p>
+				</a>
+				<a class="col-lg-4 col-xs-12" href="MeetPets/index.html" target="_blank">
+					<span class="animated swing"></span>
+					<p>遇见宠屋整站开发</p>
+				</a>
+			</div>
+		</div><a id="blog"></a>
+		<!--作品 end-->
+		<!--博客 begin-->
+		<div class="container content blog">
+			<h2 class="text-center">博客</h2>
+			<div class="list-group">
+			  <a href="http://blog.csdn.net/u010803204/article/details/56293206" target="_blank" class="list-group-item">
+			    <h4 class="list-group-item-heading">HTML字符实体 </h4>
+			    <p class="list-group-item-text">在HTML中，某些字符是预留的，如果希望正确地显示预留字符，必须在HTML源代码中使用字符实体（character entities）。</p>
+			  </a>
+			  <a href="http://blog.csdn.net/u010803204/article/details/56488946" target="_blank" class="list-group-item">
+			    <h4 class="list-group-item-heading">CSS Sprites（CSS 精灵） </h4>
+			    <p class="list-group-item-text">CSS Sprites在国内被很多人称为CSS精灵。它允许你将一个页面涉及到的所有零星图片都包含到一张大图中去，这样一来，当访问该页面时，载入的图片就不会像以前那样一幅一幅地慢慢显示出来了。</p>
+			  </a>
+			  <a href="http://blog.csdn.net/u010803204/article/details/47028907" target="_blank" class="list-group-item">
+			    <h4 class="list-group-item-heading"> Win7操作系统下搭建FTP服务器 </h4>
+			    <p class="list-group-item-text">一、创建访问FTP服务器的用户 1、【开始】→鼠标右键【计算机】→【管理】，弹出计算机管理会话框，选择【本地用户和组】，鼠标右键【用户】，选择【新用户】</p>
+			  </a>
+			  <a href="http://blog.csdn.net/u010803204/article/details/47028653" target="_blank" class="list-group-item">
+			    <h4 class="list-group-item-heading">After Effect水墨流体效果 </h4>
+			    <p class="list-group-item-text">1、下载水墨流体插件turbulence.2d 下载地址http://www.52inwet.com/?p=3816 2、安装插件 （1）解压压缩包，将Crack目录下的Turbulence2D.aex复制到AE的插件目录D:\Program Files\Adobe\Adobe After Effects CS6\Support Files\Plug-ins下。</p>
+			  </a>
+			  <a href="http://blog.csdn.net/u010803204/article/details/66983719" target="_blank" class="list-group-item">
+			    <h4 class="list-group-item-heading">《JavaScript语言精粹》读书笔记（一） </h4>
+			    <p class="list-group-item-text">《JavaScript语言精粹》读书笔记（一）JavaScript : The Good PartsDouglas Crockford 著赵泽欣 鄢学鹍 译</p>
+			  </a>
+			</div>
+		</div><a id="hobby"></a>
+		<!--博客 end-->
+		<!--爱好begin-->
+		<div class="container content text-center hobby">
+			<h2>爱好</h2>
+			<div class="row">
+				<div class="col-lg-4 col-xs-4">
+					<img src="images/pic1.JPG" />
+				</div>
+				<div class="col-lg-4 col-xs-4">
+					<img src="images/pic2.JPG" />
+				</div>
+				<div class="col-lg-4 col-xs-4">
+					<img src="images/pic3.JPG" />
+				</div>
+			</div>
+		</div><a id="contact"></a>
+		<!--爱好 end-->
+		<!--联系我 begin-->
+		<div class="container content contact">
+			<h2 class="text-center">联系我</h2>
+			<div class="row">
+				<div class="col-lg-4 col-xs-4 text-center">
+					<img src="images/amy.JPG" />
+				</div>
+				<div class="col-lg-8 col-xs-8">
+					<h4>杨 梅</h4>
+					<p>电话： +86-15523286594</p>
+					<p>邮箱： ymresume@163.com</p>
+					<p>成长型程序媛，认真积极，爱专研，注重视觉感知与用户体验，热爱前端技术，也有后台开发经验。成长方向是全栈工程师，不想写后台的前端工程师不是一个好全栈。</p>
+				</div>
 			</div>
 		</div>
-		<!--content end-->
+		<!--联系我 end-->
+		<!--footer begin-->
+		<div class="footer">
+			<div class="container text-center">
+				<ul class="link">
+					<li><a href="https://github.com/yangmei945" target="_blank">Github主页</a></li>
+					<li>|</li>
+					<li><a href="http://blog.csdn.net/u010803204" target="_blank">CSDN主页</a></li>
+					<li>|</li>
+					<li><a href="http://v3.bootcss.com/" target="_blank">Bootstrap</a></li>
+					<li>|</li>
+					<li><a href="https://www.aliyun.com" target="_blank">阿里云</a></li>
+				</ul>
+				<p>渝ICP备17002754号</p>
+			</div>
+		</div>
+		<!--footer end-->
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
 	</body>
 </html>

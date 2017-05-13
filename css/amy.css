@@ -1,0 +1,83 @@
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.carousel{
+	margin-top: 50px;
+}
+.work a{
+	height: 200px;
+}
+.work a span{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+}
+.work .row a:nth-child(1) span{
+	background: url(../images/dangdang.png) no-repeat;
+	background-size: 100%;
+}
+.work .row a:nth-child(2) span{
+	background: url(../images/qq.png) no-repeat;
+	background-size: 100%;
+}
+.work .row a:nth-child(3) span{
+	background: url(../images/pet.png) no-repeat;
+	background-size: 100%;
+}
+.work a span:hover, .work a span:active{
+	animation: move 1s linear;
+	transform: scale(1.2);
+}
+@keyframes move{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.2);
+	}
+}
+.content{
+	box-shadow: 0 0 10px #ccc;
+	margin: 20px auto;
+	padding: 50px;
+}
+.content h2{
+	margin-bottom: 50px;
+}
+.content a{
+	color: #000;
+}
+.content a:hover, .content a:active{
+	text-decoration: none;
+}
+.blog h4{
+	margin-bottom: 10px;
+	color: #0063DC!important;
+}
+
+.footer{
+	background: #000;
+	color: rgba(255, 255, 255, 0.4);
+	padding: 10px 0;
+}
+.link{
+	list-style: none;
+}
+.link li{
+	display: inline-block;
+}
+.link li a{
+	color: rgba(255, 255, 255, 0.4);
+}
+.link li a:hover, .link li a:active{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+}
+.hobby img{
+	width: 80%;
+}
+.contact img{
+	width: 50%;
+	margin-bottom: 30px;
+}

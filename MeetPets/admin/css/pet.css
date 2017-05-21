@@ -1,0 +1,21 @@
+.add-pet{
+    margin-left: 20px;
+}
+.quick-query{
+    margin-right: 20px;
+}
+.quick-query input[type="text"]{
+    width: 140px;
+}
+.quick-query input[type="submit"]{
+    height: 28px;
+    line-height: 16px;
+    margin-top: -4px;
+}
+table{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.pet-photo{
+    width: 100px;
+}

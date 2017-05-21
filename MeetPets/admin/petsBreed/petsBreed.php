@@ -62,38 +62,58 @@
 		<title>宠物品种</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../css/pet.css" />
         <!--[if lt IE 9]>
         <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 	</head>
 	<body>
-        <a href="addPet.php" target="main" class="pull-left glyphicon glyphicon-plus-sign">添加宠物</a>
-        <form class="pull-right" method="post">
+        <h3 class="text-center">宠物品种</h3>
+        <a href="addPet.php" target="main" class="pull-left glyphicon glyphicon-plus-sign add-pet">添加宠物</a>
+        <form class="pull-right quick-query" method="post">
             <label>快速查询：<input type="text" name="search" /></label>
             <input type="submit" class="btn btn-default" value="提交" />
         </form>
         <div class="pull-right"></div>
-        <table class="table table-striped table-hover">
-            <caption class="text-center">宠物品种</caption>
+        <table class="table table-striped table-hover text-center">
+            <colgroup>
+                <col width="10%"/>
+                <col width="20%"/>
+                <col width="40%"/>
+                <col width="5%"/>
+                <col width="10%"/>
+                <col width="15%"/>
+            </colgroup>
             <thead>
                 <tr>
-                    <th>名称</th>
-                    <th>照片</th>
-                    <th>详细介绍</th>
-                    <th>体型</th>
-                    <th>点击量</th>
-                    <th>操作</th>
+                    <th class="text-center">名称</th>
+                    <th class="text-center">照片</th>
+                    <th class="text-center">详细介绍</th>
+                    <th class="text-center">体型</th>
+                    <th class="text-center">点击量</th>
+                    <th class="text-center">操作</th>
                 </tr>
             </thead>
             <tbody>
                 <?php for($i=$start_index;$i<=$end_index;$i++) { ?>
                 <tr>
                     <td><?php echo $dogs[$i]['name']?></td>
-                    <td><?php echo $dogs[$i]['photo']?></td>
+                    <td><img class="pet-photo" src="../upload/<?php echo $dogs[$i]['photo']?>"></td>
                     <td><?php echo $dogs[$i]['description']?></td>
-                    <td><?php echo $dogs[$i]['somatotype']?></td>
+                    <td>
+                        <?php
+                            if($dogs[$i]['somatotype']=="small"){
+                                echo "小型";
+                            }
+                            else if($dogs[$i]['somatotype']=="middle"){
+                                echo "中型";
+                            }
+                            else{
+                                echo "大型";
+                            }
+                        ?>
+                    </td>
                     <td><?php echo $dogs[$i]['hits']?></td>
                     <td>
                         <a href="editPet.php?id=<?php echo $dogs[$i]['id']?>" class="glyphicon glyphicon-pencil">编辑</a>

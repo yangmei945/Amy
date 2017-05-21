@@ -13,8 +13,8 @@
         <![endif]-->
     </head>
     <body style="overflow-x: hidden;">
-        <h1 class="text-center">添加宠物信息</h1>
-        <form class="form-horizontal" method="post">
+        <h3 class="text-center">添加宠物信息</h3>
+        <form class="form-horizontal" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="pet_name" class="col-sm-2 control-label">宠物名称</label>
                 <div class="col-sm-8">
@@ -24,7 +24,7 @@
             <div class="form-group">
                 <label for="pet_photo" class="col-sm-2 control-label">宠物图片</label>
                 <div class="col-sm-8">
-                    <input type="file" class="form-control" id="pet_photo" name="pet_photo">
+                    <input type="file" id="pet_photo" name="pet_photo">
                 </div>
             </div>
             <div class="form-group">
@@ -73,9 +73,10 @@
     if(empty($_POST)){
         die;
     }
+    require "upload.php";
     //接收表单数据
     $name   = $_POST['pet_name'];
-    $photo   = $_POST['pet_photo'];
+    $photo   = $_FILES['pet_photo']['name'];
     $description   = $_POST['pet_description'];
     $somatotype   = $_POST['pet_somatotype'];
     //连接数据库

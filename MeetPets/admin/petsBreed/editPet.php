@@ -15,15 +15,15 @@
         <title>编辑宠物信息</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../css/pet.css" />
         <!--[if lt IE 9]>
         <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
     <body style="overflow-x: hidden;">
-        <h1 class="text-center">编辑宠物信息</h1>
-        <form class="form-horizontal" method="post" action="savePets.php?id=<?php echo $row['id']?>">
+        <h3 class="text-center">编辑宠物信息</h3>
+        <form class="form-horizontal" method="post" action="savePets.php?id=<?php echo $row['id']?>" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="pet_name" class="col-sm-2 control-label">宠物名称</label>
                 <div class="col-sm-8">
@@ -33,13 +33,15 @@
             <div class="form-group">
                 <label for="pet_photo" class="col-sm-2 control-label">宠物图片</label>
                 <div class="col-sm-8">
-                    <input type="file" class="form-control" id="pet_photo" name="pet_photo"  value="<?php echo $row['photo']; ?>">
+                    <img class="pet-photo" src="../upload/<?php echo $row['photo']?>">
+                    <input type="file" id="pet_photo" name="pet_photo">
+                    <input type="hidden" name="old_pet_photo" value="<?php echo $row['photo']?>">
                 </div>
             </div>
             <div class="form-group">
                 <label for="pet_description" class="col-sm-2 control-label">详细描述</label>
                 <div class="col-sm-8">
-                    <textarea class="form-control" id="pet_description" name="pet_description"><?php echo $row['description']?>"</textarea>
+                    <textarea class="form-control" id="pet_description" name="pet_description"><?php echo $row['description']?></textarea>
                 </div>
             </div>
             <div class="form-group">

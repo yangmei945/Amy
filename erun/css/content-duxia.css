@@ -1,0 +1,35 @@
+.anwserk{
+	width: 590px;
+	height: 70px;
+/*	border: 1px solid #000000;*/
+	font: 14px/20px "微软雅黑";
+	color: #666;
+}
+//con10新增
+
+.con9_answer{
+	width: 590px;
+	height: 70px;
+	font: 14px/20px "微软雅黑";
+	color: #666;
+}
+.con10_but1{
+	background: #5eb84c;
+}
+//con9新增
+
+.con10_but1{
+	background: #5eb84c;
+}
+.con9-but1{
+	background: #5eb84c;
+}
+ .con10_but2,.con9-but2{
+	background: #a0a99e;
+}
+#con9_ans1{
+	font: 13px/25px "微软雅黑";
+}
+#con9_ans2{
+	font: 13px/25px "微软雅黑";
+}

@@ -1,0 +1,47 @@
+/* write by 杜霞*/
+div{
+	display: block;
+}
+.menu{
+	width: 350px;
+	padding-top: 40px;
+	background: url(../images/del.jpg) no-repeat right center;
+	float: left;
+}
+.menu li{
+	width: 270px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 30px;
+	background: url(../images/tubiao.png) no-repeat 13px center;
+	
+}
+.menu .line li{
+	display: list-item;
+}
+.menu .line ul{
+	list-style: none;
+}
+.menu .line li:visited,.menu .line li.kua{
+	font-weight: bold;
+	background-color:#f1f7f0;
+}
+.menu .line li:visited a,.menu .line li.kua a{
+	color: #39942d;
+}
+.menu .line li:hover{
+	font-weight: bold;
+}
+.menu .line li:hover a{
+	color: #39942d;
+}
+.menu .line li:active{
+	background-color:#f1f7f0;
+}
+
+.line li a{
+	display: block;
+	color: #666;
+	font-size: 15px;
+}
+

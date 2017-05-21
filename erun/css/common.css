@@ -1,0 +1,31 @@
+/* write by 杨梅*/
+/*样式初始化*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	display: block;
+}
+/*版心*/
+.type_area{
+	width: 970px;
+	margin: 0 auto;
+}
+.content{
+	width: 590px;
+	padding-left: 30px;
+	float: left;
+}
+.content>div:not(:first-child){
+	display: none;
+}
+.content>div{
+	margin-top: 50px;
+}
+.navbar li a em{
+	font-size: 15px;
+}

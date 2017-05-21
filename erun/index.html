@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>益跑网</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/content-duxia.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	</head>
+	<body>
+		<!--header begin-->
+		<!--write by 张华-->
+		<div class="header">
+			<div class="top">
+				<div class="type_area header-top">
+					<a href="" class="head-img">
+						<img src="images/logo-1.png" alt="" />
+					</a>
+					<a href="" class="register">登录</a>
+					<a href="" class="register">注册</a>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="type_area">
+					<ul class="navbar">
+						<li class="h-sy">
+							<a href="">
+								<em>
+									<img src="images/indexb.png" alt="" />
+									首页
+								</em>	
+							</a>
+						</li>
+						<li class="h-ss">
+									<a href=""><em>赛事</em></a>
+								<!--赛事下拉选项-->
+								<dl class="down-list">
+									<dt>
+										<a href="">
+											<i>+</i>
+											赛事报名
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											赛事城市
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											赛事日历
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											赛事相册
+										</a>
+									</dt>	
+									<dt>
+										<a href="">
+											<i>+</i>
+											成绩查询
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											赛事发布申请
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											国内机票
+										</a>
+									</dt>
+								</dl>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								拼团
+								</em>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								装备
+								</em>
+							</a>
+							<dl class="down-list">
+									<dt>
+										<a href="">
+											<i>+</i>
+											跑步装备
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											选鞋
+										</a>
+									</dt>
+							</dl>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								训练
+								</em>
+							</a>
+							<dl class="down-list">
+									<dt>
+										<a href="">
+											<i>+</i>
+											训练提高
+										</a>
+									</dt>
+									<dt>
+										<a href="">
+											<i>+</i>
+											营养恢复
+										</a>
+									</dt>
+							</dl>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								越野跑
+								</em>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								跑者专栏
+								</em>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								约跑
+								</em>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								俱乐部
+								</em>
+							</a>
+						</li>
+						<li class="">
+							<a href="">
+								<em>
+								小工具
+								</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--header end-->
+		
+		<!--content begin-->
+		<div class="wrap type_area">
+			<!--menu begin-->
+			<!--write by 杜霞-->
+			<div class="menu">
+				<ul class="line">
+					<li class="kua"><a href="javascript:;">配速计算器（Pace Caculator）</a></li>
+					<li><a href="javascript:;">配速计算转换器（Pace Converter）</a></li>
+					<li><a href="javascript:;">完跑计算器（Finish Time）</a></li>
+					<li><a href="javascript:;">马拉松配速指南（Marathon Pace）</a></li>
+					<li><a href="javascript:;">年龄等级计算器（Age-graded）</a></li>
+					<li><a href="javascript:;">BMI体重指数计算器</a></li>
+					<li><a href="javascript:;">卡路里计算器（Colorie）</a></li>
+					<li><a href="javascript:;">训练计算器</a></li>
+					<li><a href="javascript:;">国家运动员等级</a></li>
+					<li><a href="javascript:;">基础代谢计算器</a></li>
+					<li><a href="javascript:;">鞋码对照表</a></li>
+					<li><a href="javascript:;">公英制转换</a></li>
+				</ul>
+			</div>
+			<!--menu end-->
+			
+			<!--content begin-->
+			<!--write by 赵辉-->
+			<div class="content">
+				<!--配速计算器 begin-->
+				<div class="con1">
+					<h2>配速计算器 <span class="english_title">(Pace Calculator)</span></h2>
+					<p class="jiaun">在马拉松运动的训练中常使用的一个概念，配速是速度的一种，是每公里所需要的时间。配速=时间/距离。在本页面输入配速、 时间、距离三项中的任意两项计算出第三项。</p>
+				    <div class="time">
+						<div class="med">
+							<span>距离：</span>
+							<input class="int1" type="text" name="" id="con1_m" value="" /> 公里
+						</div>
+						<div class="med">
+							<span>时间：</span>
+							<input class="int1" type="text" name="" id="con1_t_hour" value="0" /> 时
+							<input class="int1" type="text" name="" id="con1_t_minute" value="" /> 分
+							<input class="int1" type="text" name="" id="con1_t_second" value="" /> 秒
+						</div>
+						<div class="med">
+							<span>配速：</span>
+							<input class="int1" type="text" name="" id="con1_s_minute" value="" /> 分
+							<input class="int1" type="text" name="" id="con1_s_second" value="" /> 秒/公里
+						</div>
+					</div>
+					<div class="left">
+						<button class="but1" id="con1_submit">计算</button>	
+						<button class="but2" id="con1_reset">重置</button>
+					</div>
+					<span class="ck" id=""></span>
+				</div>
+				<!--配速计算器 end-->
+				<!--配速转换器 begin-->
+				<div class="con2">
+					<h2>配速转换/换算器 <span class="english_title">（Pace Converter）</span></h2>
+					<p class="jiaun">输入配速（？分？秒/公里）、公里/小时、米/秒中的任意一项，计算出其他两项。例如：1公里/小时=5/18米/秒=60分0秒/公里 3.33米/秒=12公里/小时=5分/公里 </p>
+					<div class="time">
+						<div class="med">
+							<span>方式1：</span>
+							<input class="int1" type="text"  id="con2_input1"  /> 分
+							<input class="int1" type="text"  id="con2_input2"  /> 秒/公里
+						</div>
+						
+						<div class="med">
+							<span>方式2：</span>
+							<input class="int1" type="text" name="" id="con2_input3" value="" /> 公里/小时
+						</div>
+						<div class="med">
+							<span>方式3：</span>
+							<input class="int1" type="text" name="" id="con2_input4" value="" /> 米/秒
+						</div>
+					</div>
+					<div class="left">
+							<button class="but1" >计算</button>
+							<button class="but2" >重置</button>
+					</div>
+					<span class="ck" id=""></span>
+				</div>
+				<!--配速转换器 end-->
+				<!--完跑计算器 begin-->
+				<div class="con3">
+					<h2>完跑计算器 <span class="english_title">（Finish Time Calculator）</span></h2>
+					<p class="jiaun">
+							输入你已经跑的距离、已跑距离所用时间、计划跑的距离三项，计算出你跑完计划里程的时间
+							如你计划跑10公里、已跑8公里、用时40分钟，你跑完10公里的用时将是49分58秒
+				    </p>
+					<div class="time">
+						<div class="med">
+							<span>你已经跑的距离：</span>
+							<input class="int1" type="text" name="" id="con3_input1" value="" /> 公里
+						</div>
+						<div class="med">
+							<span>用时：</span>
+							<select class="gum" id="con3_hour"></select> 时
+							<select class="gum" id="con3_minute"></select> 分
+							<select class="gum" id="con3_second"></select> 秒
+						</div>
+						<div class="med">
+							<span>&nbsp;&nbsp;&nbsp;计划跑的距离：</span>
+							<input class="int1" type="text" name="" id="con3_input2" value="" /> 公里
+						</div>
+					</div>
+					<div class="left">
+						<button class="but1" id="con3_submit">计算</button>
+						<button class="but2" id="con3_reset">重置</button>
+					</div>
+					<span class="ck" id=""></span>
+				    <div class="jiegou"></div>
+				</div>
+				<!--完跑计算器 end-->
+				<!--马拉松配速指南 begin-->
+				<div class="con4">
+					<h2>马拉松配速指南 <span class="english_title">（Marathon Pace Guide）</span></h2>
+					<p class="jiaun">
+							输入你已经跑的距离、已跑距离所用时间、计划跑的距离三项，计算出你跑完计划里程的时间
+							如你计划跑10公里、已跑8公里、用时40分钟，你跑完10公里的用时将是49分58秒
+				    </p>
+					<div class="time">
+						<div class="med">
+							   <span>预计完赛的时间：</span>
+								<select class="gum" name="">
+									<option value="">0</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+									<option value="">6</option>
+								</select> 时
+								<select class="gum" name="">
+									<option value="">0</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select> 分
+								<select class="gum" name="">
+									<option value="">0</option>
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select> 秒
+						  </div>
+								
+								<div class="med">
+										<span class="huo">或预计速配：</span>
+										<input class="int1" type="text" name="" id="" value="" /> 米/秒
+								</div>
+						</div>
+								<div class="left">
+									<button class="but1" id="">计算</button>
+									<button class="but2" id="">重置</button>
+						        </div>
+						<span class="ck" id=""></span>
+				   
+				    <div class="jgou"></div>
+				    <div class="med con4_result">
+				    	<span>每公里所用的时间：</span>
+				    	<span></span>
+				    </div>
+				</div>
+				<!--马拉松配速指南 end-->
+				<!--年龄等级计算器 begin-->
+				<div class="con5">
+					<h2>年龄等级计算器 <span class="english_title">（Age-graded Calculator）</span></h2>
+					<p class="jiaun">输入性别、年龄、跑步距离、用时计算出：年龄等级得分,年龄等级用时等。世界级不同年龄的成绩由WMA Age-grading calculator 2006提供。年龄等级得分是您的成绩在您所在年龄组的位置，年龄等级用时是对照组（25岁）要达到您的等级得分所需要的时间。等级得分：100% 世界纪录水平 >90% 世界水平 >80% 全国水平 >70% 地区水平 >60% 当地水平 </p>
+				    <div class="jihua">
+					    <span>性别：</span>
+					    <input type="radio" class="nan" id="mnn" name="sex" checked="checked" />男
+					    <input type="radio" class="nav" id="onn" name="sex" />女
+				    </div>
+					<div class="med">
+								<span>年龄：</span>
+								<input class="int1" type="text" name="" id="iput1" value="" /> 
+					</div>
+					 <div class="med">
+							<span>跑了：</span>
+							    <select class="gumm" name="">
+									<option value="">500m</option>
+									<option value="">1000m</option>
+									<option value="">3km</option>
+									<option value="">5km</option>
+								</select> 
+					</div>
+					<div class="med">
+						   <span>用时：</span>
+							<select class="gum" name="">
+								<option value="">0</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+								<option value="">6</option>
+							</select> 时
+							<select class="gum" name="">
+								<option value="">0</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select> 分
+							<select class="gum" name="">
+								<option value="">0</option>
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select> 秒
+				 	 </div>
+				 	<div class="left">
+							<button class="but1" id="">计算</button>
+							<button class="but2" id="">重置</button>
+				    </div>
+					<div class="cck" id=""></div>
+				</div>
+				<!--年龄等级计算器 end-->
+				<!--BMI体重指数计算器 begin-->
+				<div class="con6">
+					<h2>BMI体重指数计算器 <span class="english_title">（Body Mass Index Calculator）</span></h2>
+					<p class="jiaun">输入体重（公斤）、身高（厘米），计算BMI=体重（公斤）/身高（米）平方<br />
+									75KM 175CM BMI=75/1.75×1.75=24.49<br />
+     			                                                            偏轻（低于18.5）、正常（18.5-24.9）、偏重（25-29.9）、肥胖（30及以上）
+					</p>
+				   
+						<div class="med">
+								<span class="huo">身高：</span>
+								<input class="int1" type="text" name="" id="" value="" /> 厘米
+						</div>
+						<div class="med">
+								<span class="huo">体重：</span>
+								<input class="int1" type="text" name="" id="" value="" /> 公斤
+						</div>
+						<div class="left">
+							<button class="but1" id="">计算</button>
+							<button class="but2" id="">重置</button>
+				        </div>
+				       <div class="cck" id=""></div>
+				</div>
+				<!--BMI体重指数计算器 end-->
+				<!--卡路里计算器 begin-->
+				<div class="con7">
+					<h2>卡路里计算器 <span class="english_title">（Calorie Calculator）</span></h2>
+					<p class="jiaun">输入跑步距离（公里）、体重（公斤）计算卡路里。</p>
+					<div class="med">
+								<span class="huo">跑步距离：</span>
+								<input class="int1" type="text" name="" id="distance" value="" /> 公里
+					</div>
+					<div class="med">
+								<span class="huo">体重：</span>
+								<input class="int1" type="text" name="" id="weight" value="" /> 公斤
+					</div>
+					<div class="left">
+							<button class="but1" id="btn2">计算</button>
+							<button class="but2" id="btn">重置</button>
+				    </div>
+				    <div class="cck" id=""></div>
+				    <span id="jieguo"></span>
+				</div>
+				<!--卡路里计算器 end-->
+				<!--训练计算器 begin-->
+				<div class="con8">
+					<h2>训练计算器 <span class="english_title">（Training Calculator）</span></h2>
+					<div class="med">
+							<span class="huo">最新的跑步距离:</span>
+							<input class="int1" type="text" name="" id="int1" value="" /> 公里
+					</div>
+					<div class="med">
+					   <span>最新的跑步用时：</span>
+						<select id="zxc1" class="gum" name="">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+						</select> 时
+						<select id="zxc2" class="gum" name="">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select> 分
+						<select id="zxc3" class="gum" name="">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select> 秒
+			 	 </div>
+					<div class="left">
+						<button class="but1" id="an1">计算</button>
+						<button class="but2" id="an2">重置</button>
+			        </div>
+			       <div class="cck" id=""></div>
+			       <div class="yuji">
+			       	   <span>预计用时：</span>
+			       	 <table cellspacing="0">
+					       	   <tr>
+					       	   	        <td colspan="2" class="shupai">用时</td>
+					       	   	        <td colspan="2" class="shupai">速配</td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>1.5km</td>
+					       	   	        <td id="s1"></td>
+					       	   	         <td id="p1"></td>
+					       	   	        <td>公里/分</td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>3km</td>
+					       	   	        <td id="s2"></td>
+					       	   	         <td id="p2"></td>
+					       	   	        <td>公里/小时</td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>5km</td>
+					       	   	        <td id="s3"></td>
+					       	   	         <td id="p3"></td>
+					       	   	        <td>米/秒</td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>10km</td>
+					       	   	        <td id="s4"></td>
+					       	   	         <td></td>
+					       	   	        <td></td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>半程马拉松</td>
+					       	   	        <td id="s5"></td>
+					       	   	         <td></td>
+					       	   	        <td></td>
+					       	   </tr>
+					       	    <tr>
+					       	   	        <td>半程马拉松</td>
+					       	   	        <td id="s6"></td>
+					       	   	         <td></td>
+					       	   	        <td></td>
+					       	   </tr>
+			       	   </table>
+			       </div>
+				</div>
+				<!--训练计算器 end-->
+				<!--国家运动员等级 begin-->
+				<div class="con9">
+					<h2>国家运动员等级 </h2>
+					<p class="jiaun">输入性别，年龄和成绩（5K，10K，半程马拉松，全程马拉松），给出等级，分业余和专业（专业不论年龄，也不含半程马拉松）</p>
+				    <div class="jihua">
+					   	<span>性别：</span>
+					    <input type="radio" value="男" id="con9_man" name="sex" checked="checked" />男
+					    <input type="radio" value="女" id="con9_nv" name="sex" />女
+				    </div>
+					<div class="med">
+						<span>年龄：</span>
+						<input type="text" id="con9_age" value="" /> 
+					</div>
+					 <div class="med">
+							<span>跑了：</span>
+							    <select class="gumm">
+									<option value="5000" id="juli1">5000m</option>
+									<option value="10000" id="juli2">10000m</option>
+									<option value="21097.5" id="juli3">半程马拉松</option>
+									<option value="42195" id="juli4">全程马拉松</option>
+								</select> 
+					</div>
+					<div class="med">
+						   <span>用时：</span>
+							<select class="con9_hour">
+								<!--<option class="hour1" value="">1</option>-->
+							</select> 时
+							<select class="con9_min" name="">
+								<!--<option class="min1">0</option>-->
+								
+							</select> 分
+							<select class="con9_sec" name="">
+								<!--<option class="sec1">0</option>-->
+							</select> 秒
+				 	 </div>
+				 	<div class="left">
+							<button class="con9-but1" id="">计算</button>
+							<button class="con9-but2" id="">重置</button>
+				    </div>
+					<div class="cck" id=""></div>
+					<div class="con9_answer">
+						<span id="con9_ans1"></span><br />
+						<span id="con9_ans2"></span>
+					</div> <!--新增-->
+				</div>
+				<!--国家运动员 end-->
+				<!--基础代谢计算器 begin-->   
+				<div class="con10">
+					<h2>基础代谢计算器</h2>
+					<p class="jiaun">基础代谢率（Basal Metabolic Rate，简称BMR）是指：我们在安静状态下(通常为静卧状态)消耗的最低热量，人的其他活动都建立在这个基础上。>70% 地区水平 >60% 当地水平 </br>
+									一日理想卡路里摄取量=BMR x 活动因子指数</p>
+				    <div class="jihua">
+					    <span>性别：</span>
+					    <input type="radio" class="nan"  name="sex" value="nan"/>男
+					    <input type="radio" class="nan"  name="sex" value="nv"/>女
+				    </div>
+					<div class="med">
+						   <span>身高：</span>
+						   <input class="int1" type="text" name="" id="high" value="" /> Cm
+						     <span>体重：</span>
+						   <input class="int1" type="text" name="" id="weight" value="" /> Kg
+						     <span>年龄：</span>
+						   <input class="int1" type="text" name="" id="old" value="" /> 岁
+						   <div class="yundong">
+						   	<div class="left1">运动习惯：</div>
+						   	<div class="right1">
+						   		<ul>
+						   			<li class="chang1">
+						   				<input type="radio" name="sport_habit" checked="checked"  id="con10_line1"/>
+						   				<a href="#">长时间坐在办公室、教室里，很少或是 完全没有运动的人。</a>
+						   			</li>
+						   			<li class="chang2">
+						   				<input type="radio" name="sport_habit"  id="con10_line2"/>
+						   				<a href="#">偶尔会运动或散步、逛街、到郊外踏青，每周大约少量运动1～3次的人。</a>
+						   			</li>
+						   			<li class="chang2">
+						   				<input type="radio" name="sport_habit"  id="con10_line3"/>
+						   				<a href="#">有持续运动的习惯，或是会上健身房，每周大约运动3～6次的人。</a>
+						   			</li>
+						   			<li class="chang2">
+						   				<input type="radio" name="sport_habit"  id="con10_line4"/>
+						   				<a href="#">热爱运动，每周运动6～7次，或是工作量相当大的人。</a>
+						   			</li>
+						   			<li class="chang2">
+						   				<input type="radio" name="sport_habit"  id="con10_line5"/>
+						   				<a href="#">工作或生活作息需要大量劳动，相当消耗能量的人。</a>
+						   			</li>
+						   		</ul>
+						   	</div>
+						   </div>
+						   
+				 	 </div>
+				 	<div class="left">
+							<button class="con10_but1">计算</button>
+							<button class="con10_but2">重置</button>
+				    </div>
+					<div class="cck" id=""></div>
+					<div class="anwserk">
+						<span id="anwserk_1"></span><br />
+						<span id="anwserk_2"></span>
+					</div>
+				</div>
+				<!--基础代谢计算器 end-->
+				<!--鞋码对照表 begin-->
+				<div class="con11">
+					 <h2>鞋码对照表</h2>
+					<div class="cck" id=""></div>
+					<div class="lanren">
+						<span>男鞋：</span>
+						<table cellspacing="0">
+							<tr>
+								<td class="diyi">US Men's</td>
+								<td>6.0</td>
+								<td>6.5</td>
+								<td>7.0</td>
+								<td>7.5</td>
+								<td>8.0</td>
+								<td>8.5</td>
+								<td>9.0</td>
+								<td>9.5</td>
+								<td>10.0</td>
+							</tr>
+							<tr>
+								<td class="diyi">英码(UK)</td>
+								<td>5.5</td>
+								<td>6.0</td>
+								<td>6.5</td>
+								<td>7.0</td>
+								<td>7.5</td>
+								<td>8.0</td>
+								<td>8.5</td>
+								<td>9.0</td>
+								<td>8.5</td>
+							</tr>
+							<tr>
+								<td class="diyi">欧洲码(EU、FR)</td>
+								<td>38 2/3</td>
+								<td>39 1/3</td>
+								<td>40</td>
+								<td>40 2/3</td>
+								<td>41 1/3</td>
+								<td>42</td>
+								<td>42 2/3</td>
+								<td>43 1/3</td>
+								<td>44</td>
+							</tr>
+							<tr>
+								<td class="diyi">日本鞋码（JP）</td>
+								<td>240</td>
+								<td>245</td>
+								<td>250</td>
+								<td>255</td>
+								<td>260</td>
+								<td>265</td>
+								<td>270</td>
+								<td>275</td>
+								<td>280</td>
+							</tr>
+							<tr>
+								<td class="diyi">中国大陆新鞋码</td>
+								<td>38</td>
+								<td>39</td>
+								<td>40</td>
+								<td>41</td>
+								<td>42</td>
+								<td>43</td>
+								<td>44</td>
+								<td>45</td>
+								<td>46</td>
+							</tr>
+						</table>
+					</div>
+					<div class="nvren">
+						<span>女鞋：</span>
+						<table cellspacing="0">
+							<tr>
+								<td class="diyi">US Women's</td>
+								<td>5.0</td>
+								<td>5.5</td>
+								<td>6.0</td>
+								<td>6.5</td>
+								<td>7.0</td>
+								<td>7.5</td>
+								<td>8.0</td>
+								<td>8.5</td>
+								<td>9.0</td>
+							</tr>
+							<tr>
+								<td class="diyi">英码(UK)</td>
+								<td>4.0</td>
+								<td>4.5</td>
+								<td>5.0</td>
+								<td>5.5</td>
+								<td>6.0</td>
+								<td>6.5</td>
+								<td>7.0</td>
+								<td>7.5</td>
+								<td>8.0</td>
+							</tr>
+							<tr>
+								<td class="diyi">欧洲码(EU、FR)</td>
+								<td>36</td>
+								<td>36 2/3</td>
+								<td>37 1/3</td>
+								<td>38</td>
+								<td>38 2/3</td>
+								<td>39 1/3</td>
+								<td>40</td>
+								<td>40 2/3</td>
+								<td>41 1/3</td>
+							</tr>
+							<tr>
+								<td class="diyi">日本鞋码（JP）</td>
+								<td>220</td>
+								<td>225</td>
+								<td>230</td>
+								<td>235</td>
+								<td>240</td>
+								<td>245</td>
+								<td>250</td>
+								<td>255</td>
+								<td>260</td>
+							</tr>
+							<tr>
+								<td class="diyi">中国大陆新鞋码</td>
+								<td>34</td>
+								<td>35</td>
+								<td>36</td>
+								<td>37</td>
+								<td>38</td>
+								<td>39</td>
+								<td>40</td>
+								<td>41</td>
+								<td>42</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--鞋码对照表 end-->
+				<!--公英制转换 begin-->
+				<div class="con12">
+					<span>公英制转换</span>
+					<form class="gyzzh">
+						<ul>
+							<li>
+								<input type="text" id="mile" />英里
+							<span id="btn1">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="km" />公里
+							<span id="clear1">
+								<img src="images/chz.png" />
+							</span>
+							
+							</li>
+						</ul>
+						<ul>
+							<li>
+								
+								<input type="text" id="inch" />英寸
+							<span id="con9_btn2">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="cm" />厘米
+							<span id="clear2">
+								<img src="images/chz.png" />
+							</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="text" id="foot" />英尺
+							<span id="con9_btn3">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="cm2" />厘米
+							<span id="clear3">
+								<img src="images/chz.png" />
+							</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="text" id="pound" />英镑
+							<span id="con9_btn4">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="kg" />公斤
+							<span id="clear4">
+								<img src="images/chz.png" />
+							</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="text" id="ounce" />盎司
+							<span id="con9_btn5">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="gram" />克&nbsp;&nbsp;&nbsp;
+							<span id="clear5">
+								<img src="images/chz.png" />
+							</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="text" id="gallon" />加仑
+							<span id="con9_btn6">
+								<img src="images/dhao.png" />
+							</span>
+								<input type="text" id="liter" />升&nbsp;&nbsp;&nbsp;
+							<span id="clear6">
+								<img src="images/chz.png" />
+							</span>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<!--公英制转换 end-->
+			</div>
+		<!--header end-->
+		
+		<!--footer begin-->
+		<!--write by 杜霞-->
+		<div class="footer type_area">
+			<a href="http://www.erun360.com/" title>益跑首页</a>
+			-
+			<a href="/about.aspx" title>关于益跑</a>
+			-
+			<a href="/contact.aspx" title>联系我们</a>
+			-
+			<a href="/blog/200011619.aspx" title>加入益跑</a>
+			-
+			<a href="/member/login.aspx" title>会员中心</a>
+			<br />
+			<a target="_blank" href="//www.beian.gov.cn/poratl/registerSystemInfo?recordcode=11010902000358">
+				<img src="images/ba.png" class="gong">京公网安备11010902000358号
+			</a>
+			  益跑网 京ICP证151068号
+			<br />
+			Copyright ©
+			<i class="copyright" style="font-style: normal;">2012-2017</i>
+			北京益跑科技股份有限公司版权所有
+			<br />
+			<a href="mailto:info@erun360.com">info@erun360.com</a>
+			电话：86-10-84374449
+		</div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/erun.js"></script>
+		<script type="text/javascript" src="js/content-jichu.js"></script>
+		<script type="text/javascript" src="js/content-zhanghua.js"></script>
+		<script type="text/javascript" src="js/zhaohui.js"></script>
+		<script type="text/javascript" src="js/25js.js"></script>
+		<script type="text/javascript" src="js/content_yundongyuan.js"></script>
+		<script type="text/javascript" src="js/content-gongy.js"></script>
+	</body>
+</html>

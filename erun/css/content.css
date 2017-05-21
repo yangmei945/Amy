@@ -1,0 +1,463 @@
+h1,h2,h3,h4,h5,h6,strong{
+	font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,body{
+	margin: 0;
+}
+
+ul,ol {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
+em,i {
+	font-style: normal;
+}
+input{
+	padding: 0;
+	outline: none;
+}
+img{
+	border: none;
+}
+
+/* write by 赵辉*/
+.con1{
+	/*display: none;*/
+	margin-top: 30px;
+}
+.content h2{
+	color: #6b99d1;
+	font-size: 22px;
+	font-weight:600;
+	margin-bottom: 17px;
+}
+.content h2 .english_title{
+	font-weight: normal;
+}
+.content p{
+	color: #666666;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.jiaun{
+	width: 580px;
+	font-size: 12px;
+}
+.time{
+	width: 400px;
+	height: 120px;
+	margin-top: 35px;
+}
+.med{
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 14px;
+
+}
+.med input[type="text"]{
+	width: 46px;
+	height: 16px;
+	line-height: 20px;
+}
+.med span{
+	font-size: 14px;
+}
+.int1{
+	width: 50px;
+	height: 22px;
+}
+button{
+	width: 100px;
+	height: 30px;
+	margin-top:10px;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+ .but1{
+	background: #5eb84c;
+}
+ .but2{
+	background: #a0a99e;
+}
+.left{
+	float: left;
+	margin: 0 0 0 40px;
+}
+.ck{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	/*display: none;*/
+	/*border: 1px solid red;*/
+}
+/*con1 完毕*/
+
+
+/*con2 begin*/
+.con2{
+	/*display: none;*/
+	margin-top: 30px;
+}
+/*con2 end*/
+
+
+
+/*con3 begin*/
+.con3{
+	margin-top: 30px;
+}
+.gum{
+	width: 50px;
+	height: 22px;
+}
+.con3 .med span{
+	display: inline-block;
+	text-align: right;
+	width: 128px;
+	height: 30px;
+}
+.jiegou{
+	width: 580px;
+	height: 28px;
+	margin-top: 22px;
+	padding-top:20px;
+	line-height: 28px;
+	background: url(../images/dht.png) no-repeat;
+}
+
+/*con3 end*/
+
+
+
+/*con4 begin*/
+
+.con4 .med .huo{
+	display: inline-block;
+	text-align: right;
+	width: 95px;
+	height: 30px;
+}
+.con4 .left{
+	margin-top: -40px;
+}
+
+.jgou{
+	width: 580px;
+	height: 28px;
+	margin-top: -22px;
+	background: url(../images/dht.png) no-repeat;
+}
+
+/*con4 end*/
+
+/*con5 begin*/
+.con5{
+	height: 450px;
+}
+.jihua{
+	width: 600px;
+	/*height: 10px;*/
+	margin-top: 30px;
+	color: #666666;
+	overflow: hidden;
+	font-size: 12px;
+}
+.jihua span{
+	/*margin-top: 10px;*/
+	float: left;
+}
+.jihua ul{
+	margin-left: 10px;
+	float: left;
+}
+.jihua ul li{
+	margin-top: 5px;
+	width: 13px;
+	height: 11px;
+	float: left;
+}
+.con5 .med{
+	margin-top: 15px;
+}
+.con5 .gumm{
+	width: 150px;
+}
+.con5 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+/*con5 end*/
+
+/*con6 begin*/
+.con6 p{
+	margin-bottom: 40px;
+}
+.con6 .med span{
+	margin-left: 20px;
+}
+
+.con6 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+/*con6 end*/
+
+/*con7 begin*/
+.con7{
+	margin-top: 40px;
+}
+.con7 p{
+	margin-bottom: 40px;
+}
+.con7 .med span{
+	margin-left: 20px;
+}
+.con7 .huo{
+	display: inline-block;
+	text-align: right;
+	width: 80px;
+}
+.con7 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+	
+/*con7 end*/
+
+/*con8 begin*/
+
+.con8{
+	margin-top: 40px;
+}
+.con8 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+.yuji{
+	width: 500px;
+	margin-top: 10px;
+	/*border: 1px solid red;*/
+}
+.yuji>span{
+	font-size: 14px;
+	color: #666;
+}
+.con8 table{
+	width: 482px;
+	height: 230px;
+	color: #666666;
+	font-size: 12px;
+	background:#f7f7f7;
+}
+.con8 table tr{
+	text-align: center;
+	border: 1px solid black;
+}
+.con8 table{
+	border-top:1px solid  #dfdfdf ;
+	border-left:1px solid  #dfdfdf ;
+}
+.con8 table td{
+	text-align: center;
+	width: 100px;
+	border-right: 1px solid #dfdfdf;
+	border-bottom:1px solid #dfdfdf ;
+}
+.shupai{
+	border-right: none;
+	background: #dfdfdf;
+}
+/*con8 end*/
+
+
+/*con9 begin*/
+.con9 .med{
+	margin-top: 10px;
+}
+.con9 .gumm{
+	width: 100px;
+}
+
+.con9 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+/*con9 end*/
+
+
+
+/*con10 begin*/
+.con10{
+	margin-top: 40px;
+}
+.con10 .med{
+	margin-top: 10px;
+}
+.con10 .left{
+	margin-top: -30px;
+}
+.yundong{
+	width: 505px;
+	height: 150px;
+	margin-top: 10px;
+	/*border: 1px solid red;*/
+}
+.left1{
+	width: 100px;
+	line-height: 150px;
+	text-align: center;	
+	height: 150px;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.right1{
+	width: 400px;
+	height: 150px;
+	float: right;
+	position: relative;
+	top: 30px;
+}
+.right1 ul li{
+	margin: 0 0 0 -10px;
+	/*border: 1px solid red;*/
+}
+.aiya{
+	margin: 10px 0;
+}
+.aiya a{
+	color: #666666;
+	font-size: 12px;
+}
+.con10 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 70px;
+}
+/*con10  end*/
+
+/*con11  begin*/
+.con11{
+	margin-top: 40px;
+	font-size: 14px;
+	color: #666;
+}
+.con11 .cck{
+	width: 500px;
+	height: 10px;
+	background: url(../images/dht.png) no-repeat;
+	margin-top: 30px;
+}
+.lanren{
+	width: 500px;
+	height: 200px;
+	margin-top: 10px;
+	/*border: 1px solid red;*/
+}
+.con11 table{
+	width: 500px;
+	height: 180px;
+	color: #666666;
+	font-size: 12px;
+	background:#f7f7f7;
+}
+.con11 table tr{
+	/*width: 500px;*/
+	text-align: center;
+}
+
+.con11 table td{
+	text-align: center;
+	border: 1px solid #dfdfdf;
+}
+.con11 table .diyi{
+	width: 100px;
+}
+
+.nvren{
+	width: 500px;
+	height: 205px;
+	/*border: 1px solid red;*/
+}
+/*con11  end*/
+
+
+/*con12 begin*/
+.con12 {
+	margin-top: 30px;
+}
+.con12 span{
+	display:inline-block;
+	height: 30px;
+	margin-right: 5px;
+	margin-top: 10px;
+	/*border: 1px solid red;*/
+	
+}
+.con12 span img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.con12 .med{
+	height: 50px;
+	line-height: 50px;
+	/*border: 1px solid red;*/
+}
+.chongzhi{
+	margin-left: 30px;
+}
+.chongzhi1{
+	margin-left: 40px;
+}
+/*con12 end*/
+
+
+/*write by 杜霞*/
+.con12{
+	width: 590px;
+	float:right;
+}
+.gyzzh{
+	color: #666;
+	padding-top: 26px;
+}
+.gyzzh ul{
+	width: 300px;
+}
+.gyzzh ul li{
+	width: 300px;
+	line-height: 35px;
+}
+.con12 span{
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+	display: inline-block;
+}
+#mile, #km,#inch,#cm,#foot,#cm2,#pound,#kg,#ounce,#gram,#gallon,#liter{
+	width: 48px;
+}
+.gyzzh img{
+	display: inline-block;
+	vertical-align: middle;
+}

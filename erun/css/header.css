@@ -1,0 +1,113 @@
+/* write by 张华*/
+.header {
+	width: 100%;
+	height: 128px;
+	background: url(../images/ntopbg.png) no-repeat center top;
+	padding-top: 8px;
+	position: relative;
+	background-color: #f4f4f4;
+}
+.wrap {
+	width: 970px;
+	margin: 0 auto;
+}
+.top {
+	overflow: hidden;
+}
+a:link,a:visited {
+	text-decoration: none;
+}
+.header-top a {
+	color: #999;
+}
+.top a:hover {
+	text-decoration: underline;
+}
+.head-img {
+	float: left;
+	margin-top: -5px;
+}
+.header-top .register {
+	float: right;
+	font: 14px/54px "微软雅黑";
+	color: #990000;
+	padding: 0 5px 0 4px;
+}
+.header .nav {
+	background: #89c547;
+	width: 100%;
+	height: 65px;
+	border-bottom: 2px solid #73aa36;
+}
+.navbar {}
+.navbar li {
+	float: left;
+	height: 67px;
+	position: relative;
+	font: 16px/67px "微软雅黑";
+	padding: 0 24px;
+	background: url(../images/lvg.png) no-repeat right center;
+	margin-top: 5px;
+}
+.navbar li a {
+	color: white;
+}
+.h-sy img {
+	display: inline-block;
+	margin: 4px 4px -3px 0;
+}
+.h-sy em {
+	display: block;
+	height: 63px;
+}
+.navbar li:last-child {
+	background: none;
+}
+.navbar li:last-child em {
+	background: url(../images/adqbj.png) no-repeat center 53px;
+	height: 70px;
+	z-index: 10;
+}
+.navbar em {
+	list-style: none;
+	font-style: normal;
+	display: block;
+	height: 70px;
+	z-index: 5;
+	position: relative;
+}
+.navbar li:hover em{
+	background: url(../images/adqbj.png) no-repeat center 53px;
+	height: 70px;
+	z-index: 10;
+	/*position: relative;*/
+}
+.navbar dl {
+	display: none;
+	position: absolute;
+	width: 184px;
+	border: 1px solid #a0d468;
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 8px 0 12px 0;
+	top: 66px;
+	left: 10px;
+	z-index: 1;
+}
+.navbar dl dt {
+	padding-left: 15px;
+	height: 55px;
+	line-height: 55px;
+}
+.navbar dl dt a {
+	color: #97a2ad;
+	font-size: 15px;
+	font-weight: 100;
+}
+.navbar i {
+	font-style: normal;
+}
+.navbar li:hover dl {
+	display: block;
+}
+.navbar dl dt:hover{background: #a0d468;}
+.navbar dl dt:hover a{color: white;}

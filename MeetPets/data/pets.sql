@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-05-06 03:41:15
+-- Generation Time: 2017-05-23 16:34:03
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,18 +19,13 @@ SET time_zone = "+00:00";
 --
 -- Database: `pets`
 --
-CREATE DATABASE IF NOT EXISTS `pets` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `pets`;
 
 -- --------------------------------------------------------
 
 --
 -- 表的结构 `admin`
 --
--- 创建时间： 2017-05-06 01:38:53
---
 
-DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '管理员ID',
   `username` varchar(20) NOT NULL COMMENT '管理员用户名',
@@ -51,10 +46,7 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 --
 -- 表的结构 `dogs`
 --
--- 创建时间： 2017-05-06 01:38:55
---
 
-DROP TABLE IF EXISTS `dogs`;
 CREATE TABLE IF NOT EXISTS `dogs` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
@@ -63,15 +55,23 @@ CREATE TABLE IF NOT EXISTS `dogs` (
   `somatotype` varchar(20) NOT NULL COMMENT '体型',
   `hits` bigint(255) NOT NULL DEFAULT '0' COMMENT '点击量',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- 转存表中的数据 `dogs`
 --
 
 INSERT INTO `dogs` (`id`, `name`, `photo`, `description`, `somatotype`, `hits`) VALUES
-(3, '哈士奇', '20131221194416.gif', '哈士奇哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈', 'big', 0),
-(4, '牧羊犬', '2f5c12f4859eca3d139a52ecffa79bd2.jpg', '牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬牧羊犬', 'big', 0);
+(7, '1', '149494984919389.jpg', '111111111', 'small', 0),
+(8, '2', '149494533121625.jpg', '2222222222222222', 'middle', 0),
+(9, '3', '149494533121625.jpg', '3333333333333333333333333333', 'big', 0),
+(10, '4', '149494533121625.jpg', '4444444444444444444444444', 'small', 0),
+(11, '5', '149494533121625.jpg', '55555555555555555555555555', 'middle', 0),
+(12, '6', '149494533121625.jpg', '6666666666666666666', 'big', 0),
+(13, '7', '149494533121625.jpg', '77777777777777777777777', 'small', 0),
+(14, '8', '149494533121625.jpg', '888888888888888888888', 'middle', 0),
+(15, '9', '149494533121625.jpg', '9999999999999999999', 'big', 0),
+(16, '10', '14949484111470.jpg', '10101001010101001100110100101010100101010010110010100111111111111111111111111111111111111000000000000000001111111111111010000000000000011111111111010101010101001010101001010010001010010100110010100100101', 'small', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
